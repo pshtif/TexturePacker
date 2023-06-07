@@ -113,7 +113,6 @@ namespace TexturePacker
             if (removeUnused)
             {
                 var unusedRects = GetUnusedRectangles(images, p_packedRects);
-                Debug.Log(unusedRects.Count);
                 p_packedRects.RemoveAll(p => unusedRects.Contains(p));
             }
 
