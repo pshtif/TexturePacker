@@ -4,7 +4,6 @@
 
 using System.Collections.Generic;
 using System.Linq;
-using PixelFederation.Common.Attributes;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -131,15 +130,9 @@ namespace TexturePacker
 
             Preview();
         }
-
-        [Button()]
-        void Invalidate()
+        
+        public void Invalidate()
         {
-#if UNITY_EDITOR
-            if (!Application.isPlaying)
-                return;
-#endif
-
             InitializePacker(false);
 
             var images = EnumerateImages();

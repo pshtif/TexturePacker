@@ -1,9 +1,7 @@
 {
     "name": "TexturePacker",
     "rootNamespace": "",
-    "references": [
-        "GUID:660749efae4591342b2cf9c5f4b5b8d7"
-    ],
+    "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,

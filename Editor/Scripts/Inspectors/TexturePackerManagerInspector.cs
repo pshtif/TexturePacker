@@ -29,7 +29,10 @@ namespace TexturePacker.Editor
 
             if (Application.isPlaying)
             {
-                GUILayout.Button("Pack");
+                if (GUILayout.Button("Pack", GUILayout.Height(24)))
+                {
+                    ((TexturePackerManager)target).Invalidate();
+                }
             }
 
             EditorGUILayout.PropertyField(serializedObject.FindProperty("previewer"));
